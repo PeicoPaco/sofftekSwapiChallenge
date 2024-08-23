@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "6192205c-6e45-442e-9294-1cda138a56b4",
+		"name": "SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36994148",
+		"_collection_link": "https://kubu22.postman.co/workspace/KUBU-Workspace~c0aa4c36-b6ef-4565-bb0d-77c5d973ca2a/collection/36994148-6192205c-6e45-442e-9294-1cda138a56b4?action=share&source=collection_link&creator=36994148"
+	},
+	"item": [
+		{
+			"name": "Films",
+			"item": [
+				{
+					"name": "createFilm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"filmId\": 4,\r\n        \"titulo\": \"The Phantom Menace\",\r\n        \"episodio_id\": 1,\r\n        \"apertura\": \"Turmoil has engulfed the\\r\\nGalactic Republic. The taxation\\r\\nof trade routes to outlying star\\r\\nsystems is in dispute.\\r\\n\\r\\nHoping to resolve the matter\\r\\nwith a blockade of deadly\\r\\nbattleships, the greedy Trade\\r\\nFederation has stopped all\\r\\nshipping to the small planet\\r\\nof Naboo.\\r\\n\\r\\nWhile the Congress of the\\r\\nRepublic endlessly debates\\r\\nthis alarming chain of events,\\r\\nthe Supreme Chancellor has\\r\\nsecretly dispatched two Jedi\\r\\nKnights, the guardians of\\r\\npeace and justice in the\\r\\ngalaxy, to settle the conflict....\",\r\n        \"director\": \"George Lucas\",\r\n        \"productor\": \"Rick McCallum\",\r\n        \"fecha_de_lanzamiento\": \"1999-05-19\",\r\n        \"personajes\": [\r\n            \"https://swapi.dev/api/people/2/\",\r\n            \"https://swapi.dev/api/people/3/\",\r\n            \"https://swapi.dev/api/people/10/\",\r\n            \"https://swapi.dev/api/people/11/\",\r\n            \"https://swapi.dev/api/people/16/\",\r\n            \"https://swapi.dev/api/people/20/\",\r\n            \"https://swapi.dev/api/people/21/\",\r\n            \"https://swapi.dev/api/people/32/\",\r\n            \"https://swapi.dev/api/people/33/\",\r\n            \"https://swapi.dev/api/people/34/\",\r\n            \"https://swapi.dev/api/people/35/\",\r\n            \"https://swapi.dev/api/people/36/\",\r\n            \"https://swapi.dev/api/people/37/\",\r\n            \"https://swapi.dev/api/people/38/\",\r\n            \"https://swapi.dev/api/people/39/\",\r\n            \"https://swapi.dev/api/people/40/\",\r\n            \"https://swapi.dev/api/people/41/\",\r\n            \"https://swapi.dev/api/people/42/\",\r\n            \"https://swapi.dev/api/people/43/\",\r\n            \"https://swapi.dev/api/people/44/\",\r\n            \"https://swapi.dev/api/people/46/\",\r\n            \"https://swapi.dev/api/people/47/\",\r\n            \"https://swapi.dev/api/people/48/\",\r\n            \"https://swapi.dev/api/people/49/\",\r\n            \"https://swapi.dev/api/people/50/\",\r\n            \"https://swapi.dev/api/people/51/\",\r\n            \"https://swapi.dev/api/people/52/\",\r\n            \"https://swapi.dev/api/people/53/\",\r\n            \"https://swapi.dev/api/people/54/\",\r\n            \"https://swapi.dev/api/people/55/\",\r\n            \"https://swapi.dev/api/people/56/\",\r\n            \"https://swapi.dev/api/people/57/\",\r\n            \"https://swapi.dev/api/people/58/\",\r\n            \"https://swapi.dev/api/people/59/\"\r\n        ],\r\n        \"planetas\": [\r\n            \"https://swapi.dev/api/planets/1/\",\r\n            \"https://swapi.dev/api/planets/8/\",\r\n            \"https://swapi.dev/api/planets/9/\"\r\n        ],\r\n        \"naves_estelares\": [\r\n            \"https://swapi.dev/api/starships/31/\",\r\n            \"https://swapi.dev/api/starships/32/\",\r\n            \"https://swapi.dev/api/starships/39/\",\r\n            \"https://swapi.dev/api/starships/40/\",\r\n            \"https://swapi.dev/api/starships/41/\"\r\n        ],\r\n        \"vehiculos\": [\r\n            \"https://swapi.dev/api/vehicles/33/\",\r\n            \"https://swapi.dev/api/vehicles/34/\",\r\n            \"https://swapi.dev/api/vehicles/35/\",\r\n            \"https://swapi.dev/api/vehicles/36/\",\r\n            \"https://swapi.dev/api/vehicles/37/\",\r\n            \"https://swapi.dev/api/vehicles/38/\",\r\n            \"https://swapi.dev/api/vehicles/42/\"\r\n        ],\r\n        \"especies\": [\r\n            \"https://swapi.dev/api/species/1/\",\r\n            \"https://swapi.dev/api/species/2/\",\r\n            \"https://swapi.dev/api/species/6/\",\r\n            \"https://swapi.dev/api/species/11/\",\r\n            \"https://swapi.dev/api/species/12/\",\r\n            \"https://swapi.dev/api/species/13/\",\r\n            \"https://swapi.dev/api/species/14/\",\r\n            \"https://swapi.dev/api/species/15/\",\r\n            \"https://swapi.dev/api/species/16/\",\r\n            \"https://swapi.dev/api/species/17/\",\r\n            \"https://swapi.dev/api/species/18/\",\r\n            \"https://swapi.dev/api/species/19/\",\r\n            \"https://swapi.dev/api/species/20/\",\r\n            \"https://swapi.dev/api/species/21/\",\r\n            \"https://swapi.dev/api/species/22/\",\r\n            \"https://swapi.dev/api/species/23/\",\r\n            \"https://swapi.dev/api/species/24/\",\r\n            \"https://swapi.dev/api/species/25/\",\r\n            \"https://swapi.dev/api/species/26/\",\r\n            \"https://swapi.dev/api/species/27/\"\r\n        ],\r\n        \"creado\": \"2014-12-19T16:52:55.740000Z\",\r\n        \"editado\": \"2014-12-20T10:54:07.216000Z\",\r\n        \"url\": \"https://swapi.dev/api/films/4/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://4n6jws2on7.execute-api.us-east-1.amazonaws.com/films",
+							"protocol": "https",
+							"host": [
+								"4n6jws2on7",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyId",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Planets",
+			"item": [
+				{
+					"name": "createPlanet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"planetId\": 1,\r\n    \"nombre\": \"Tatooine\",\r\n    \"periodo_de_rotacion\": \"23\",\r\n    \"periodo_orbital\": \"304\",\r\n    \"diametro\": \"10465\",\r\n    \"clima\": \"arid\",\r\n    \"gravedad\": \"1 standard\",\r\n    \"terreno\": \"desert\",\r\n    \"agua_superficial\": \"1\",\r\n    \"poblacion\": \"200000\",\r\n    \"residentes\": [\r\n        \"https://swapi.dev/api/people/1/\",\r\n        \"https://swapi.dev/api/people/2/\",\r\n        \"https://swapi.dev/api/people/4/\",\r\n        \"https://swapi.dev/api/people/6/\",\r\n        \"https://swapi.dev/api/people/7/\",\r\n        \"https://swapi.dev/api/people/8/\",\r\n        \"https://swapi.dev/api/people/9/\",\r\n        \"https://swapi.dev/api/people/11/\",\r\n        \"https://swapi.dev/api/people/43/\",\r\n        \"https://swapi.dev/api/people/62/\"\r\n    ],\r\n    \"peliculas\": [\r\n        \"https://swapi.dev/api/films/1/\",\r\n        \"https://swapi.dev/api/films/3/\",\r\n        \"https://swapi.dev/api/films/4/\",\r\n        \"https://swapi.dev/api/films/5/\",\r\n        \"https://swapi.dev/api/films/6/\"\r\n    ],\r\n    \"creado\": \"2014-12-09T13:50:49.641000Z\",\r\n    \"editado\": \"2014-12-20T20:58:18.411000Z\",\r\n    \"url\": \"https://swapi.dev/api/planets/1/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://4n6jws2on7.execute-api.us-east-1.amazonaws.com/planets",
+							"protocol": "https",
+							"host": [
+								"4n6jws2on7",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"planets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://4n6jws2on7.execute-api.us-east-1.amazonaws.com/planets/5",
+							"protocol": "https",
+							"host": [
+								"4n6jws2on7",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"planets",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "swapiIntegration",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "translate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"resource\": \"films\",\r\n    \"data\": [\r\n        {\r\n            \"title\": \"A New Hope\",\r\n            \"episode_id\": 4,\r\n            \"opening_crawl\": \"It is a period of civil war.\\r\\nRebel spaceships, striking\\r\\nfrom a hidden base, have won\\r\\ntheir first victory against\\r\\nthe evil Galactic Empire.\\r\\n\\r\\nDuring the battle, Rebel\\r\\nspies managed to steal secret\\r\\nplans to the Empire's\\r\\nultimate weapon, the DEATH\\r\\nSTAR, an armored space\\r\\nstation with enough power\\r\\nto destroy an entire planet.\\r\\n\\r\\nPursued by the Empire's\\r\\nsinister agents, Princess\\r\\nLeia races home aboard her\\r\\nstarship, custodian of the\\r\\nstolen plans that can save her\\r\\npeople and restore\\r\\nfreedom to the galaxy....\",\r\n            \"director\": \"George Lucas\",\r\n            \"producer\": \"Gary Kurtz, Rick McCallum\",\r\n            \"release_date\": \"1977-05-25\",\r\n            \"characters\": [\r\n                \"https://swapi.dev/api/people/1/\",\r\n                \"https://swapi.dev/api/people/2/\",\r\n                \"https://swapi.dev/api/people/3/\",\r\n                \"https://swapi.dev/api/people/4/\",\r\n                \"https://swapi.dev/api/people/5/\",\r\n                \"https://swapi.dev/api/people/6/\",\r\n                \"https://swapi.dev/api/people/7/\",\r\n                \"https://swapi.dev/api/people/8/\",\r\n                \"https://swapi.dev/api/people/9/\",\r\n                \"https://swapi.dev/api/people/10/\",\r\n                \"https://swapi.dev/api/people/12/\",\r\n                \"https://swapi.dev/api/people/13/\",\r\n                \"https://swapi.dev/api/people/14/\",\r\n                \"https://swapi.dev/api/people/15/\",\r\n                \"https://swapi.dev/api/people/16/\",\r\n                \"https://swapi.dev/api/people/18/\",\r\n                \"https://swapi.dev/api/people/19/\",\r\n                \"https://swapi.dev/api/people/81/\"\r\n            ],\r\n            \"planets\": [\r\n                \"https://swapi.dev/api/planets/1/\",\r\n                \"https://swapi.dev/api/planets/2/\",\r\n                \"https://swapi.dev/api/planets/3/\"\r\n            ],\r\n            \"starships\": [\r\n                \"https://swapi.dev/api/starships/2/\",\r\n                \"https://swapi.dev/api/starships/3/\",\r\n                \"https://swapi.dev/api/starships/5/\",\r\n                \"https://swapi.dev/api/starships/9/\",\r\n                \"https://swapi.dev/api/starships/10/\",\r\n                \"https://swapi.dev/api/starships/11/\",\r\n                \"https://swapi.dev/api/starships/12/\",\r\n                \"https://swapi.dev/api/starships/13/\"\r\n            ],\r\n            \"vehicles\": [\r\n                \"https://swapi.dev/api/vehicles/4/\",\r\n                \"https://swapi.dev/api/vehicles/6/\",\r\n                \"https://swapi.dev/api/vehicles/7/\",\r\n                \"https://swapi.dev/api/vehicles/8/\"\r\n            ],\r\n            \"species\": [\r\n                \"https://swapi.dev/api/species/1/\",\r\n                \"https://swapi.dev/api/species/2/\",\r\n                \"https://swapi.dev/api/species/3/\",\r\n                \"https://swapi.dev/api/species/4/\",\r\n                \"https://swapi.dev/api/species/5/\"\r\n            ],\r\n            \"created\": \"2014-12-10T14:23:31.880000Z\",\r\n            \"edited\": \"2014-12-20T19:49:45.256000Z\",\r\n            \"url\": \"https://swapi.dev/api/films/1/\"\r\n        },\r\n        {\r\n            \"title\": \"The Empire Strikes Back\",\r\n            \"episode_id\": 5,\r\n            \"opening_crawl\": \"It is a dark time for the\\r\\nRebellion. Although the Death\\r\\nStar has been destroyed,\\r\\nImperial troops have driven the\\r\\nRebel forces from their hidden\\r\\nbase and pursued them across\\r\\nthe galaxy.\\r\\n\\r\\nEvading the dreaded Imperial\\r\\nStarfleet, a group of freedom\\r\\nfighters led by Luke Skywalker\\r\\nhas established a new secret\\r\\nbase on the remote ice world\\r\\nof Hoth.\\r\\n\\r\\nThe evil lord Darth Vader,\\r\\nobsessed with finding young\\r\\nSkywalker, has dispatched\\r\\nthousands of remote probes into\\r\\nthe far reaches of space....\",\r\n            \"director\": \"Irvin Kershner\",\r\n            \"producer\": \"Gary Kurtz, Rick McCallum\",\r\n            \"release_date\": \"1980-05-17\",\r\n            \"characters\": [\r\n                \"https://swapi.dev/api/people/1/\",\r\n                \"https://swapi.dev/api/people/2/\",\r\n                \"https://swapi.dev/api/people/3/\",\r\n                \"https://swapi.dev/api/people/4/\",\r\n                \"https://swapi.dev/api/people/5/\",\r\n                \"https://swapi.dev/api/people/10/\",\r\n                \"https://swapi.dev/api/people/13/\",\r\n                \"https://swapi.dev/api/people/14/\",\r\n                \"https://swapi.dev/api/people/18/\",\r\n                \"https://swapi.dev/api/people/20/\",\r\n                \"https://swapi.dev/api/people/21/\",\r\n                \"https://swapi.dev/api/people/22/\",\r\n                \"https://swapi.dev/api/people/23/\",\r\n                \"https://swapi.dev/api/people/24/\",\r\n                \"https://swapi.dev/api/people/25/\",\r\n                \"https://swapi.dev/api/people/26/\"\r\n            ],\r\n            \"planets\": [\r\n                \"https://swapi.dev/api/planets/4/\",\r\n                \"https://swapi.dev/api/planets/5/\",\r\n                \"https://swapi.dev/api/planets/6/\",\r\n                \"https://swapi.dev/api/planets/27/\"\r\n            ],\r\n            \"starships\": [\r\n                \"https://swapi.dev/api/starships/3/\",\r\n                \"https://swapi.dev/api/starships/10/\",\r\n                \"https://swapi.dev/api/starships/11/\",\r\n                \"https://swapi.dev/api/starships/12/\",\r\n                \"https://swapi.dev/api/starships/15/\",\r\n                \"https://swapi.dev/api/starships/17/\",\r\n                \"https://swapi.dev/api/starships/21/\",\r\n                \"https://swapi.dev/api/starships/22/\",\r\n                \"https://swapi.dev/api/starships/23/\"\r\n            ],\r\n            \"vehicles\": [\r\n                \"https://swapi.dev/api/vehicles/8/\",\r\n                \"https://swapi.dev/api/vehicles/14/\",\r\n                \"https://swapi.dev/api/vehicles/16/\",\r\n                \"https://swapi.dev/api/vehicles/18/\",\r\n                \"https://swapi.dev/api/vehicles/19/\",\r\n                \"https://swapi.dev/api/vehicles/20/\"\r\n            ],\r\n            \"species\": [\r\n                \"https://swapi.dev/api/species/1/\",\r\n                \"https://swapi.dev/api/species/2/\",\r\n                \"https://swapi.dev/api/species/3/\",\r\n                \"https://swapi.dev/api/species/6/\",\r\n                \"https://swapi.dev/api/species/7/\"\r\n            ],\r\n            \"created\": \"2014-12-12T11:26:24.656000Z\",\r\n            \"edited\": \"2014-12-15T13:07:53.386000Z\",\r\n            \"url\": \"https://swapi.dev/api/films/2/\"\r\n        },\r\n        {\r\n            \"title\": \"Return of the Jedi\",\r\n            \"episode_id\": 6,\r\n            \"opening_crawl\": \"Luke Skywalker has returned to\\r\\nhis home planet of Tatooine in\\r\\nan attempt to rescue his\\r\\nfriend Han Solo from the\\r\\nclutches of the vile gangster\\r\\nJabba the Hutt.\\r\\n\\r\\nLittle does Luke know that the\\r\\nGALACTIC EMPIRE has secretly\\r\\nbegun construction on a new\\r\\narmored space station even\\r\\nmore powerful than the first\\r\\ndreaded Death Star.\\r\\n\\r\\nWhen completed, this ultimate\\r\\nweapon will spell certain doom\\r\\nfor the small band of rebels\\r\\nstruggling to restore freedom\\r\\nto the galaxy...\",\r\n            \"director\": \"Richard Marquand\",\r\n            \"producer\": \"Howard G. Kazanjian, George Lucas, Rick McCallum\",\r\n            \"release_date\": \"1983-05-25\",\r\n            \"characters\": [\r\n                \"https://swapi.dev/api/people/1/\",\r\n                \"https://swapi.dev/api/people/2/\",\r\n                \"https://swapi.dev/api/people/3/\",\r\n                \"https://swapi.dev/api/people/4/\",\r\n                \"https://swapi.dev/api/people/5/\",\r\n                \"https://swapi.dev/api/people/10/\",\r\n                \"https://swapi.dev/api/people/13/\",\r\n                \"https://swapi.dev/api/people/14/\",\r\n                \"https://swapi.dev/api/people/16/\",\r\n                \"https://swapi.dev/api/people/18/\",\r\n                \"https://swapi.dev/api/people/20/\",\r\n                \"https://swapi.dev/api/people/21/\",\r\n                \"https://swapi.dev/api/people/22/\",\r\n                \"https://swapi.dev/api/people/25/\",\r\n                \"https://swapi.dev/api/people/27/\",\r\n                \"https://swapi.dev/api/people/28/\",\r\n                \"https://swapi.dev/api/people/29/\",\r\n                \"https://swapi.dev/api/people/30/\",\r\n                \"https://swapi.dev/api/people/31/\",\r\n                \"https://swapi.dev/api/people/45/\"\r\n            ],\r\n            \"planets\": [\r\n                \"https://swapi.dev/api/planets/1/\",\r\n                \"https://swapi.dev/api/planets/5/\",\r\n                \"https://swapi.dev/api/planets/7/\",\r\n                \"https://swapi.dev/api/planets/8/\",\r\n                \"https://swapi.dev/api/planets/9/\"\r\n            ],\r\n            \"starships\": [\r\n                \"https://swapi.dev/api/starships/2/\",\r\n                \"https://swapi.dev/api/starships/3/\",\r\n                \"https://swapi.dev/api/starships/10/\",\r\n                \"https://swapi.dev/api/starships/11/\",\r\n                \"https://swapi.dev/api/starships/12/\",\r\n                \"https://swapi.dev/api/starships/15/\",\r\n                \"https://swapi.dev/api/starships/17/\",\r\n                \"https://swapi.dev/api/starships/22/\",\r\n                \"https://swapi.dev/api/starships/23/\",\r\n                \"https://swapi.dev/api/starships/27/\",\r\n                \"https://swapi.dev/api/starships/28/\",\r\n                \"https://swapi.dev/api/starships/29/\"\r\n            ],\r\n            \"vehicles\": [\r\n                \"https://swapi.dev/api/vehicles/8/\",\r\n                \"https://swapi.dev/api/vehicles/16/\",\r\n                \"https://swapi.dev/api/vehicles/18/\",\r\n                \"https://swapi.dev/api/vehicles/19/\",\r\n                \"https://swapi.dev/api/vehicles/24/\",\r\n                \"https://swapi.dev/api/vehicles/25/\",\r\n                \"https://swapi.dev/api/vehicles/26/\",\r\n                \"https://swapi.dev/api/vehicles/30/\"\r\n            ],\r\n            \"species\": [\r\n                \"https://swapi.dev/api/species/1/\",\r\n                \"https://swapi.dev/api/species/2/\",\r\n                \"https://swapi.dev/api/species/3/\",\r\n                \"https://swapi.dev/api/species/5/\",\r\n                \"https://swapi.dev/api/species/6/\",\r\n                \"https://swapi.dev/api/species/8/\",\r\n                \"https://swapi.dev/api/species/9/\",\r\n                \"https://swapi.dev/api/species/10/\",\r\n                \"https://swapi.dev/api/species/15/\"\r\n            ],\r\n            \"created\": \"2014-12-18T10:39:33.255000Z\",\r\n            \"edited\": \"2014-12-20T09:48:37.462000Z\",\r\n            \"url\": \"https://swapi.dev/api/films/3/\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4n6jws2on7.execute-api.us-east-1.amazonaws.com/translate/translate",
+					"protocol": "https",
+					"host": [
+						"4n6jws2on7",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"translate",
+						"translate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
