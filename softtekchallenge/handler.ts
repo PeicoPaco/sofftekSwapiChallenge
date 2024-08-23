@@ -23,8 +23,6 @@ planetsApp.use((req, res) => {
 });
 export const planets = serverless(planetsApp);
 
-// Other handlers (if needed)
-// For example, SWAPI and Translate handlers can also be defined similarly
 const swapiApp = express();
 swapiApp.use(express.json());
 swapiApp.use("/swapi", swapiController);
