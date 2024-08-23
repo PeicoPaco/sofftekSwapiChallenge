@@ -8,7 +8,7 @@ import filmController from "./controllers/filmController";
 // Films handler
 const filmsApp = express();
 filmsApp.use(express.json());
-filmsApp.use("/fims", filmController);
+filmsApp.use("/films", filmController);
 filmsApp.use((req, res) => {
   res.status(404).json({ error: "Not Found" });
 });
