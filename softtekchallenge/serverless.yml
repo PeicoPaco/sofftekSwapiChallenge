@@ -1,8 +1,5 @@
-# "org" ensures this Service is used with the correct Serverless Framework Access Key.
 org: codenations
-# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
 app: swapitranslate
-# "service" is the name of this project. This will also be added to your AWS resource names.
 service: softtekchallenge
 
 stages:
@@ -35,10 +32,42 @@ provider:
     PLANETS_TABLE: ${param:planetsTableName}
 
 functions:
-  api:
-    handler: handler.handler
+  filmsApi:
+    handler: handler.films
     events:
-      - httpApi: "*"
+      - httpApi:
+          path: /films
+          method: "*"
+      - httpApi:
+          path: /films/{id}
+          method: "*"
+
+  planetsApi:
+    handler: handler.planets
+    events:
+      - httpApi:
+          path: /planets
+          method: "*"
+      - httpApi:
+          path: /planets/{id}
+          method: "*"
+
+  swapiApi:
+    handler: handler.swapi
+    events:
+      - httpApi:
+          path: /swapi/{resource}/{id}
+          method: "*"
+
+  translateApi:
+    handler: handler.translate
+    events:
+      - httpApi:
+          path: /translate
+          method: "*"
+      - httpApi:
+          path: /translate/{id}
+          method: "*"
 
 resources:
   Resources:

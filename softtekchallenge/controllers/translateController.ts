@@ -3,7 +3,7 @@ import { translateKeys } from "../services/translationService";
 
 const router = express.Router();
 
-router.post("/translate", async (req: Request, res: Response) => {
+router.post("/", async (req: Request, res: Response) => {
   try {
     const { resource, data, id } = req.body;
 
