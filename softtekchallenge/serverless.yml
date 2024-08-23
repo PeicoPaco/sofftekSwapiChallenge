@@ -1,0 +1,66 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: codenations
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: swapitranslate
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: softtekchallenge
+
+stages:
+  default:
+    params:
+      filmsTableName: "film-table-${sls:stage}"
+      planetsTableName: "planet-table-${sls:stage}"
+
+provider:
+  logs:
+    httpApi: true
+  name: aws
+  runtime: nodejs20.x
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource:
+            - Fn::GetAtt: [FilmsTable, Arn]
+            - Fn::GetAtt: [PlanetsTable, Arn]
+  environment:
+    FILMS_TABLE: ${param:filmsTableName}
+    PLANETS_TABLE: ${param:planetsTableName}
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - httpApi: "*"
+
+resources:
+  Resources:
+    FilmsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: filmId
+            AttributeType: N
+        KeySchema:
+          - AttributeName: filmId
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
+        TableName: ${param:filmsTableName}
+    PlanetsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: planetId
+            AttributeType: N
+        KeySchema:
+          - AttributeName: planetId
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
+        TableName: ${param:planetsTableName}
