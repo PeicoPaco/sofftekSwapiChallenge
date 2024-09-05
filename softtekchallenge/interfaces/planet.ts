@@ -9,9 +9,9 @@ export interface Planet {
   terreno: string;
   agua_superficial: string;
   poblacion: string;
-  residentes: string[]; // Array of URLs (strings)
-  peliculas: string[]; // Array of URLs (strings)
-  creado: string; // ISO 8601 date string
-  editado: string; // ISO 8601 date string
-  url: string; // URL to the planet resource
+  residentes: string[];
+  peliculas: string[];
+  creado: string;
+  editado: string;
+  url: string;
 }
